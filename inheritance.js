@@ -6,11 +6,11 @@ class Animal {
     }
 
     breathes = function(){
-        return console.log(`A ${this.name} breathes`);
+        return console.log(`${this.name} breathes`);
     }
 
     swims = function(){
-        return console.log(`A {this.name} swims`);
+        return console.log(`${this.name} swims`);
     }
 }
 
@@ -32,5 +32,9 @@ class Dog extends Animal {
 
 const Mylo = new Dog("Mylo", "Husky", "Red");
 
+//Dog specific methods a.k.a Dog Behaviours
 Mylo.bark();
 Mylo.showFurColor();
+
+//General animal behaviour of a dog inherited from animal class
+Mylo.breathes();
